@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-	int n;//n=정수의 갯수
+	int n;
 	int num;
 	int max = -1000000, min = 10000000;
 	scanf("%d", &n);
