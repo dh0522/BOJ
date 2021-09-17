@@ -6,21 +6,14 @@ int main() {
 
 
 	int x;
-	int i;
+	int i, j;
 	int count = 0;//°¹¼ö  
 
 	for (i = 0; i < n; i++) {
 		scanf("%d", &x);
-		if (x == 1)	count = count;
-
-		else if (x < 10) {
-			if ((x == 2) || (x == 3) || (x == 5) || (x == 7))	count++;
-			else if ((x % 2 == 0) || (x % 3 == 0))	count = count;
-		}
-
-		else {
-			if ((x % 2 == 0) || (x % 3 == 0) || (x % 5 == 0) || (x % 7 == 0))	count = count;
-			else	count++;
+		for (j = 2; j <= x; j++) {
+			if (x == j)	count++;
+			if (x % j == 0) 	break;
 		}
 
 	}
